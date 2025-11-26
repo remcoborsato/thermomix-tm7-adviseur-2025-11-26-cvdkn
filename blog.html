@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ThermoMix TM7 Adviseur Blog - Uw persoonlijke gids voor Italiaanse recepten en Thermomix-advies. Bespaar tijd en kook met zelfvertrouwen.">
+    <meta name="keywords" content="Thermomix, TM7, Italiaanse recepten, kooktips, kookadvies, blog">
+    <meta name="author" content="ThermoMix Adviseur">
+    <meta property="og:title" content="ThermoMix TM7 Adviseur Blog - Italiaanse Recepten">
+    <meta property="og:description" content="Ontdek de kracht van uw Thermomix met onze expert-geleide recepten en kooktips.">
+    <meta property="og:type" content="website">
+    <title>ThermoMix TM7 Adviseur Blog - Uw Persoonlijke Kookgids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .bg-accent {
+            background-color: var(--accent);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .text-accent {
+            color: var(--accent);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+            filter: brightness(1.1);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .card-rounded {
+            border-radius: 1rem;
+        }
+        
+        .card-rounded-2xl {
+            border-radius: 1.5rem;
+        }
+        
+        .shadow-soft {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transition-smooth {
+            transition: all 0.3s ease-out;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--secondary) 0%, rgba(238, 240, 255, 0.5) 100%);
+        }
+        
+        .section-heading {
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transition: all 0.3s ease-out;
+            }
+            
+            .mobile-menu.hidden {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="header-sticky">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    T
+                </div>
+                <span class="text-xl font-semibold text-primary hidden sm:inline">ThermoMix</span>
+            </a>
+            
+            <a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn" class="text-gray-700 hover:text-primary transition-smooth font-medium">
+                <i class="fas fa-arrow-left mr-2"></i>Terug
+            </a>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="hero-gradient py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center">
+                <h1 class="section-heading text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
+                    Ons Blog
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Ontdek de laatste tips, recepten en expert-geleide gidsen voor het maximale uit uw Thermomix TM7 halen. Van authentieke Italiaanse recepten tot geavanceerde kooktechnieken, alles wat u nodig hebt om een meesterkok te worden.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div class="text-center">
+                    <div class="w-14 h-14 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Recepten & Gidsen</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ontdek honderden authentieke Italiaanse recepten speciaal aangepast voor uw Thermomix TM7, van klassieke pasta tot moderne desserts.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-14 h-14 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Kooktips & Technieken</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Leer professionele kooktechnieken, handige trucs en geavanceerde methoden om uw culinaire vaardigheden te verbeteren.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-14 h-14 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Expert-Geleide Gidsen</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Volg stap-voor-stap instructies van culinaire experts die u helpen het maximale uit uw Thermomix te halen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="mb-12">
+                <h2 class="section-heading text-3xl md:text-4xl font-semibold mb-2">
+                    Meest Recent
+                </h2>
+                <div class="w-20 h-1 bg-accent rounded-full"></div>
+            </div>
+            
+            <div class="bg-white rounded-2xl overflow-hidden shadow-soft hover-scale transition-smooth">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
+                    <!-- Featured Image -->
+                    <div class="lg:col-span-1 bg-gradient-to-br from-primary via-accent to-primary flex items-center justify-center p-8 md:p-12 min-h-64 lg:min-h-full">
+                        <div class="text-center">
+                            <i class="fas fa-utensils text-white text-6xl mb-4"></i>
+                            <p class="text-white font-semibold text-lg">Thermomix Expertise</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="lg:col-span-2 p-8 md:p-12 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="text-sm font-semibold text-accent bg-secondary px-4 py-2 rounded-full">
+                                    <i class="fas fa-calendar-alt mr-2"></i>26 November 2025
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4 leading-tight">
+                                De Ultieme Gids voor Thermomix TM7: Meester Italiaanse Recepten en Professionele Kooktechnieken
+                            </h3>
+                            
+                            <p class="text-gray-600 leading-relaxed mb-6 text-base md:text-lg">
+                                De Thermomix TM7 revolutioneert uw kookervaring met geavanceerde technologie en intuïtieve bediening. Deze uitgebreide gids ontrafelt hoe u maximaal profijt haalt uit dit veelzijdige toestel, vooral bij authentieke Italiaanse recepten. Van precisie-temperatuurregeling tot geleide recepten op het touchscreen, de TM7 elimineert giswerk uit koken. Ontdek meesterlijke technieken voor pasta, risotto en sauzen, geavanceerde methoden zoals sous-vide en emulsies, plus praktische tips voor dagelijks gebruik.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-sm bg-secondary text-primary px-3 py-1 rounded-full">#Thermomix</span>
+                                <span class="text-sm bg-secondary text-primary px-3 py-1 rounded-full">#Italiaans</span>
+                                <span class="text-sm bg-secondary text-primary px-3 py-1 rounded-full">#Recepten</span>
+                                <span class="text-sm bg-secondary text-primary px-3 py-1 rounded-full">#Kooktips</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn/blog/de-ultieme-gids-voor-thermomix-tm7-meester-italiaa.html" class="btn-primary inline-block w-fit">
+                            <i class="fas fa-arrow-right mr-2"></i>Lees Meer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="py-16 md:py-24 bg-secondary">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="mb-12">
+                <h2 class="section-heading text-3xl md:text-4xl font-semibold mb-2">
+                    Meer Artikelen
+                </h2>
+                <div class="w-20 h-1 bg-accent rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Empty State Cards for Future Posts -->
+                <div class="bg-white rounded-2xl p-8 shadow-soft hover-scale transition-smooth opacity-50">
+                    <div class="bg-gray-200 h-48 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-plus text-gray-400 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Binnenkort Beschikbaar</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Meer inspirerende artikelen, recepten en kooktips zijn in voorbereiding. Blijf op de hoogte voor nieuwe content!
+                    </p>
+                    <span class="text-sm text-gray-500">Komende artikel</span>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-soft hover-scale transition-smooth opacity-50">
+                    <div class="bg-gray-200 h-48 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-plus text-gray-400 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Binnenkort Beschikbaar</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Meer inspirerende artikelen, recepten en kooktips zijn in voorbereiding. Blijf op de hoogte voor nieuwe content!
+                    </p>
+                    <span class="text-sm text-gray-500">Komende artikel</span>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-soft hover-scale transition-smooth opacity-50">
+                    <div class="bg-gray-200 h-48 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-plus text-gray-400 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Binnenkort Beschikbaar</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Meer inspirerende artikelen, recepten en kooktips zijn in voorbereiding. Blijf op de hoogte voor nieuwe content!
+                    </p>
+                    <span class="text-sm text-gray-500">Komende artikel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="py-20 md:py-32 bg-cover bg-center relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=600&fit=crop'); background-attachment: fixed;">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="relative max-w-4xl mx-auto px-8 md:px-16 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6 leading-tight">
+                Blijf Geïnformeerd Over Nieuwe Artikelen
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Ontvang de nieuwste recepten, kooktips en expert-geleide gidsen rechtstreeks in uw inbox.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+                <input type="email" placeholder="Voer uw e-mailadres in..." class="flex-1 px-6 py-4 rounded-full text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                <button class="btn-primary text-lg">
+                    <i class="fas fa-bell mr-2"></i>Abonneer
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-primary mb-6">
+                Klaar om Te Beginnen?
+            </h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Ga terug naar onze hoofdpagina en ontdek alle functies van de ThermoMix Adviseur. Leer van experts en transform eer uw kookervaring vandaag nog.
+            </p>
+            <a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn" class="btn-primary text-lg">
+                <i class="fas fa-home mr-2"></i>Terug naar Startpagina
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            T
+                        </div>
+                        <span class="text-xl font-semibold text-white">ThermoMix</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Uw persoonlijke gids voor het ontdekken van de volledige potentie van uw Thermomix en het meesterschap van Italiaanse recepten.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Navigatie</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn#features" class="text-gray-400 hover:text-accent transition-smooth">Functies</a></li>
+                        <li><a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn#benefits" class="text-gray-400 hover:text-accent transition-smooth">Voordelen</a></li>
+                        <li><a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn#testimonials" class="text-gray-400 hover:text-accent transition-smooth">Getuigenissen</a></li>
+                        <li><a href="https://remcoborsato.github.io/thermomix-tm7-adviseur-2025-11-26-cvdkn#faq" class="text-gray-400 hover:text-accent transition-smooth">Veelgestelde Vragen</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Juridisch</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-accent transition-smooth">Privacybeleid</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-accent transition-smooth">Gebruiksvoorwaarden</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-accent transition-smooth">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <a href="mailto:info@kookadviseur.nl" class="text-gray-400 hover:text-accent transition-smooth">info@kookadviseur.nl</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-globe text-accent"></i>
+                            <a href="https://kookadviseur.nl" target="_blank" class="text-gray-400 hover:text-accent transition-smooth">kookadviseur.nl</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="border-t border-gray-800 pt-12 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-6 md:mb-0">
+                    &copy; 2025 ThermoMix Adviseur. Alle rechten voorbehouden.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent transition-smooth text-xl" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-smooth text-xl" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-smooth text-xl" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-smooth text-xl" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
